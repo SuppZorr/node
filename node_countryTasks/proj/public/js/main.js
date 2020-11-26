@@ -1,6 +1,8 @@
 const buttonsEl = document.querySelector('.btns');
 const btnEl = document.querySelectorAll('input[name="country"]');
-let loaderEl = document.querySelector('.loader');
+const loaderEl = document.querySelector('.loader');
+const hiddenEl = document.querySelector('.hidden');
+
 
 
  
@@ -16,7 +18,12 @@ for (i=0; i<btnEl.length;i++) {
                 }
                 document.location.replace(`/${selectedValue}`);
                 loaderEl.style.display = "flex";
-    })
+    });
+    for (const btn of btnEl) {
+        if (btn.value === hiddenEl.innerHTML) {
+            btn.setAttribute("checked", "checked")
+        }
+    }
 }
 
 

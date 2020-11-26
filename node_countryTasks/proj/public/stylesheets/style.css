@@ -58,3 +58,7 @@ img {
 ul {
   margin-top: 50px;
 }
+
+.hidden {
+  display: none;
+}
