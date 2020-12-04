@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>countries</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="icon" href="data:,">
+
+  </head>
+  <body>
+       
+   <div class="sidebar">
+      <div class="btns"> 
+        <p><input type="radio" name="country" value="Africa">Africa</input> </p>
+        <p><input type="radio" name="country" value="Americas">Americas</input></p>
+        <p><input type="radio" name="country" value="Asia">Asia</input></p>
+        <p><input type="radio" name="country" value="Europe">Europe</input></p>
+        <p><input type="radio" name="country" value="Oceania">Oceania</input></p>
+      </div>
+      <div class="hidden"><%- selectedRb %></div>
+    </div>
+   <div class="list"> <%- data %> </div>
+
+   <div class="loader" style=<%- loaderstyle%>>
+    <img class="gif" src="./images/loader.gif">
+ </div>
+      
+   <script src='./js/main.js'></script>
+  </body>
+</html>
+   
+
+   
